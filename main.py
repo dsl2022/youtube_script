@@ -10,9 +10,9 @@ def main():
     api_key = os.environ.get('GOOGLE_YOUTUBE_API_KEY')   
     print(f'test apikey {api_key}')
     # Search keyword and max results
-    keywords = ['vara network', 'crypto']
+    keywords = ['runpod', 'ai']
     search_query = ' '.join(keywords)
-    max_results = 10
+    max_results = 100
     transcript_texts = []
     youtube_videos_meta = youtube_search(api_key, search_query, max_results)
     for item in youtube_videos_meta.get('items', []):
